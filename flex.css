@@ -1,0 +1,33 @@
+.tower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+    height: 500px;
+    width: 750px;
+}
+
+.floor {
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    background-color: orangered;
+    border: dotted 2px peru;
+}
+
+.strip-mall {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: pink;
+    height: 500px;
+    width: 750px;
+}
+
+.store {
+    height: 50px;
+    width: 100px;
+    background-color: rebeccapurple;
+    border: solid 1px black;
+}
