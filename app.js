@@ -45,4 +45,5 @@ myButton.onclick = () => {
     } else {
         alert('oops.');
     }
+    alert('Quiz Complete! Your results will be logged to the webpage.');
 };
