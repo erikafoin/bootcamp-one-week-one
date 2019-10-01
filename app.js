@@ -9,6 +9,7 @@ myButton.onclick = () => {
     alert('Welcome to my quiz!');
     // eslint-disable-next-line no-unused-vars
     const myConfirmation = confirm('Do you want to take my quiz?'); //returns true or false//
+    let score = 0;
 
     const userAnswer = prompt('Have I been to Thailand? (yes/no)');
     const lowercaseUserAnswer = userAnswer.toLowerCase().trim();
@@ -18,6 +19,7 @@ myButton.onclick = () => {
 
     if (answer1) {
         alert('Wahoo!');
+        score ++;
     } else {
         alert('oops.');
     }
@@ -30,6 +32,7 @@ myButton.onclick = () => {
 
     if (answer2) {
         alert('Wahoo!');
+        score ++;
     } else {
         alert('oops.');
     }
@@ -42,8 +45,9 @@ myButton.onclick = () => {
 
     if (answer3) {
         alert('Wahoo!');
+        score ++;
     } else {
         alert('oops.');
     }
-    alert('Quiz Complete! Your results will be logged to the webpage.');
+    alert('Quiz Complete! Your score is ' + (score / 3) * 100 + '%');
 };
