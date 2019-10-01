@@ -1,4 +1,4 @@
-import { isCorrect } from './functions.js';
+import { isNo, isYes } from './functions.js';
 
 const myButton = document.getElementById('action-button');
 
@@ -7,16 +7,16 @@ const myButton = document.getElementById('action-button');
 
 myButton.onclick = () => {
     alert('Welcome to my quiz!');
+    // eslint-disable-next-line no-unused-vars
     const myConfirmation = confirm('Do you want to take my quiz?'); //returns true or false//
-    console.log(myConfirmation);
 
     const userAnswer = prompt('Have I been to Thailand? (yes/no)');
     const lowercaseUserAnswer = userAnswer.toLowerCase().trim();
     const trimmedLowercaseUserAnswer = lowercaseUserAnswer.trim();
 
-    const userIsCorrect = isCorrect(trimmedLowercaseUserAnswer);
+    const answer1 = isYes(trimmedLowercaseUserAnswer);
 
-    if (userIsCorrect) {
+    if (answer1) {
         alert('Wahoo!');
     } else {
         alert('oops.');
@@ -26,9 +26,9 @@ myButton.onclick = () => {
     const lowercaseUserAnswer2 = userAnswer2.toLowerCase().trim();
     const trimmedLowercaseUserAnswer2 = lowercaseUserAnswer2.trim();
 
-    const userIsCorrect2 = isCorrect(trimmedLowercaseUserAnswer2);
+    const answer2 = isNo(trimmedLowercaseUserAnswer2);
 
-    if (userIsCorrect2) {
+    if (answer2) {
         alert('Wahoo!');
     } else {
         alert('oops.');
@@ -38,9 +38,9 @@ myButton.onclick = () => {
     const lowercaseUserAnswer3 = userAnswer3.toLowerCase().trim();
     const trimmedLowercaseUserAnswer3 = lowercaseUserAnswer3.trim();
 
-    const userIsCorrect3 = isCorrect(trimmedLowercaseUserAnswer3);
+    const answer3 = isNo(trimmedLowercaseUserAnswer3);
 
-    if (userIsCorrect3) {
+    if (answer3) {
         alert('Wahoo!');
     } else {
         alert('oops.');
