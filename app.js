@@ -12,8 +12,7 @@ myButton.onclick = () => {
     let score = 0;
 
     const userAnswer = prompt('Have I been to Thailand? (yes/no)');
-    const lowercaseUserAnswer = userAnswer.toLowerCase().trim();
-    const trimmedLowercaseUserAnswer = lowercaseUserAnswer.trim();
+    const trimmedLowercaseUserAnswer = userAnswer.toLowerCase().trim();
 
     const answer1 = isYes(trimmedLowercaseUserAnswer);
 
@@ -25,8 +24,7 @@ myButton.onclick = () => {
     }
 
     const userAnswer2 = prompt('Do I own a guinea pig named Chocolate? (yes/no)');
-    const lowercaseUserAnswer2 = userAnswer2.toLowerCase().trim();
-    const trimmedLowercaseUserAnswer2 = lowercaseUserAnswer2.trim();
+    const trimmedLowercaseUserAnswer2 = userAnswer2.toLowerCase().trim();
 
     const answer2 = isNo(trimmedLowercaseUserAnswer2);
 
@@ -38,8 +36,7 @@ myButton.onclick = () => {
     }
 
     const userAnswer3 = prompt('Is the English Horn from England? (yes/no)');
-    const lowercaseUserAnswer3 = userAnswer3.toLowerCase().trim();
-    const trimmedLowercaseUserAnswer3 = lowercaseUserAnswer3.trim();
+    const trimmedLowercaseUserAnswer3 = userAnswer3.toLowerCase().trim();
 
     const answer3 = isNo(trimmedLowercaseUserAnswer3);
 

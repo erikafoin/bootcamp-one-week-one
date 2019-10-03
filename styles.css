@@ -61,3 +61,8 @@ footer {
     text-align: center;
     font-size: 10pt;
 }
+
+.sidebyside {
+    display: flex;
+    flex-direction: row;
+}
