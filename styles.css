@@ -19,6 +19,17 @@ h3 {
     text-align: center;
 }
 
+p {
+    margin-bottom: 24px;
+}
+
+p .inner-paragraph {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: flex-start;
+    width: 50%;
+}
+
 body {
     font-family: 'Nanum Gothic', sans-serif;
     background-color: #EACB34;
@@ -26,14 +37,15 @@ body {
 }
 
 article {
-    width: 75%;
+    width: 80%;
     justify-content: flex-start;
+    padding-right: 5%;
 }
 
 aside {
     font-family: 'Nanum Gothic', sans-serif;
     font-style: italic;
-    width: 25%;
+    width: 20%;
     justify-content: flex-end;
 }
 
@@ -45,19 +57,32 @@ aside {
 
 .aside-photo {
     flex-direction: column;
-    border: 1px solid #A20F38;
-    max-width: 50%;
+    display: block;
+    margin: 0px auto;
+    border: 2px solid #A20F38;
+    max-width: 75%;
 }
 
+#myanmar {
+    max-width: 100%;
+}
 #action-button {
     background-color: #F66731;
-    height: 100px;
+    height: 70px;
     width: 100%;
     font-size: 24px;
+    margin-top: 48px;
 }
 
 footer {
     font-family: 'Grenze', serif;
     text-align: center;
     font-size: 10pt;
+    margin-top: 48px;
+}
+
+.sidebyside {
+    display: flex;
+    flex-direction: row;
+    padding-right: 5%;
 }
